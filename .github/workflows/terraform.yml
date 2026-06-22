@@ -18,7 +18,7 @@ jobs:
 
   bootstrap-workspace:
 
-    uses: ./.github/workflows/bootstrap-workspace.yml
+    uses: ./.github/workflows/bootstrap.yml
 
     with:
       organization: HCL-TERRA-TEAM
