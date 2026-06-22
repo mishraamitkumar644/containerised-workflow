@@ -1,0 +1,15 @@
+name: Bootstrap Dev Workspace
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bootstrap:
+    uses: ./.github/workflows/bootstrap-workspace.yml
+
+    with:
+      organization: HCL-TERRA-TEAM
+      workspace_name: containerised-workflow-dev
+
+    secrets:
+      TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
