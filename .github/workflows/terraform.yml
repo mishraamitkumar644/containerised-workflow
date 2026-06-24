@@ -16,16 +16,19 @@ permissions:
 
 jobs:
 
-  bootstrap-workspace:
+  bootstrap:
 
-    uses: ./.github/workflows/bootstrap.yml
+    uses: ./.github/workflows/terraform-cloud-bootstrap.yml
 
     with:
-      organization: HCL-TERRA-TEAM
+      organization: my-org
       workspace_name: network-dev
 
     secrets:
       TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
 #  fmt:
 #
