@@ -66,6 +66,8 @@ jobs:
 
       - name: Terraform Plan
         working-directory: terraform-cloud
+        env:
+          TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
         run: |
           terraform plan \
           -var="organization=${{ inputs.organization }}" \
@@ -76,6 +78,8 @@ jobs:
 
       - name: Terraform Apply
         working-directory: terraform-cloud
+        env:
+          TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
         run: |
           terraform apply -auto-approve \
           -var="organization=${{ inputs.organization }}" \
