@@ -5,7 +5,7 @@ terraform {
     organization = "HCL-TERRA-TEAM"
 
     workspaces {
-      name = "network-dev"
+      name = "dev-workspace"
     }
   }
 

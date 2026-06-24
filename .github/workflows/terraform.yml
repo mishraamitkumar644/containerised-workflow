@@ -22,7 +22,7 @@ jobs:
 
     with:
       organization: HCL-TERRA-TEAM
-      workspace_name: workspace-dev
+      workspace_name: dev-workspace
 
     secrets:
       TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
