@@ -53,9 +53,9 @@ jobs:
 
       - name: Debug Token
         env:
-            TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
-          run: |
-            echo "Length=${#TF_TOKEN_app_terraform_io}"
+          TF_TOKEN_app_terraform_io: ${{ secrets.TF_API_TOKEN }}
+        run: |
+          echo "Length=${#TF_TOKEN_app_terraform_io}"
 
       - name: Terraform Plan
         working-directory: terraform-cloud
