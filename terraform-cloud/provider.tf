@@ -1,3 +1,3 @@
 provider "tfe" {
-  token = var.tfc_token
+  token = var.tf_api_token
 }
