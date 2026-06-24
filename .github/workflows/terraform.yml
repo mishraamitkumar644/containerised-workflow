@@ -21,7 +21,7 @@ jobs:
     uses: ./.github/workflows/terraform-cloud-bootstrap.yml
 
     with:
-      organization: my-org
+      organization: HCL-TERRA-TEAM
       workspace_name: network-dev
 
     secrets:
