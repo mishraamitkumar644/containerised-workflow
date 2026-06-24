@@ -20,9 +20,3 @@ variable "azure_subscription_id" {
   type      = string
   sensitive = true
 }
-
-variable "tf_api_token" {
-  type      = string
-  sensitive = true
-}
-
